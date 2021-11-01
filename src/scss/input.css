@@ -4,51 +4,38 @@
 ::before {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 header {
   color: red;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 header nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-around;
+  align-items: center;
   height: 4rem;
 }
-
-header nav .top #cart-btn, header nav .top .toggleMenu, header nav .top #profile {
+header nav .top #cart-btn,
+header nav .top .toggleMenu,
+header nav .top #profile {
   padding: 0.6rem;
   border: none;
   background-color: transparent;
 }
-
 header nav .top #logo {
   padding-right: 5rem;
 }
-
 header nav .top .avatar {
   width: 21px;
   height: auto;
 }
 
 .collections {
+  display: block;
   height: 100%;
   width: 0%;
   position: fixed;
@@ -57,12 +44,37 @@ header nav .top .avatar {
   left: 0;
   background-color: white;
   overflow-x: hidden;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-
 .collections .toggleMenu {
   border: none;
   background-color: transparent;
+  position: absolute;
+  top: 1rem;
+  left: 1.5rem;
 }
+.collections .list-container {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 4rem;
+  left: 1rem;
+}
+.collections .list-container ul {
+  list-style-type: none;
+}
+.collections .list-container ul li {
+  font-family: "Kumbh Sans", "Comic Sans";
+  padding: 0.5rem;
+  font-weight: 700;
+  font-size: 16px;
+}
+.collections .list-container ul li a {
+  text-decoration: none;
+}
+.collections .list-container ul li a:link,
+.collections .list-container ul li a:visited {
+  color: black;
+}
+
 /*# sourceMappingURL=input.css.map */
