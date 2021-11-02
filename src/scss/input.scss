@@ -84,19 +84,96 @@ header {
 }
 
 .slideshow-container{
-  position: relative;
   margin: auto;
+  display: block;
   .slides {
     display: none;
+    width:100%;
+    position: absolute;
     .stock-img {
       width: 100%;
-      height: 38vh;
+      height: 36vh;
     }
   }
-  .prevBtn, .nextBtn {
+  .dirBtn-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.2rem;
+    .prevBtn, .nextBtn {
     border: none;
-    border-radius: 100%;
+    align-items: center;
+    border-radius: 90%;
     width: 2.5rem;
     height: 2.5rem;
+    position: relative;
+    top: 15vh;
+    opacity: 40%;
+    }
+    .prevBtn:hover, .nextBtn:hover {
+      opacity: 80%;
+    }
   }
+  // dots
+.circle-index {
+  position: relative;
+  top: 28vh;
+  display: flex;
+  justify-content: center;
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: $pale-orange-primary;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  .active, .dot:hover {
+    background-color: $orange-primary;
+  }
+}
+}
+
+.details {
+  display:block;
+  position: relative;
+  top: 13rem;
+  padding: 0.5rem;
+  margin: 0.8rem;
+  article {
+    display: flex;
+    flex-direction: column;
+    .companyName {
+      color: $orange-primary;
+      font-family: $font-type;
+      font-weight: $weight-700;
+      font-size: $p-font-size;
+      margin: 0.3rem;
+    }
+    .promotation {
+      color: $black;
+      font-family: $font-type;
+      font-weight: $weight-700;
+      font-size: 1.6rem;
+      margin: 0.3rem;
+    }
+    .desc {
+      color: $dark-gray-blue;
+      font-family: $font-type;
+      margin: 0.3rem;
+    }
+  }
+  
+  .userInput {
+    display: grid;
+  }
+}
+
+
+
+.attribution {
+  position: fixed;
+  text-align: center;
+  bottom: 0;
 }
