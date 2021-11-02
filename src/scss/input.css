@@ -4,21 +4,35 @@
 ::before {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 header {
   color: red;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 4rem;
 }
+
 header nav .top #cart-btn,
 header nav .top .toggleMenu,
 header nav .top #profile {
@@ -26,9 +40,11 @@ header nav .top #profile {
   border: none;
   background-color: transparent;
 }
+
 header nav .top #logo {
   padding-right: 5rem;
 }
+
 header nav .top .avatar {
   width: 21px;
   height: auto;
@@ -44,8 +60,10 @@ header nav .top .avatar {
   left: 0;
   background-color: white;
   overflow-x: hidden;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
+
 .collections .toggleMenu {
   border: none;
   background-color: transparent;
@@ -53,28 +71,57 @@ header nav .top .avatar {
   top: 1rem;
   left: 1.5rem;
 }
+
 .collections .list-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: absolute;
   top: 4rem;
   left: 1rem;
 }
+
 .collections .list-container ul {
   list-style-type: none;
 }
+
 .collections .list-container ul li {
   font-family: "Kumbh Sans", "Comic Sans";
   padding: 0.5rem;
   font-weight: 700;
   font-size: 16px;
 }
+
 .collections .list-container ul li a {
   text-decoration: none;
 }
+
 .collections .list-container ul li a:link,
 .collections .list-container ul li a:visited {
   color: black;
 }
 
+.slideshow-container {
+  position: relative;
+  margin: auto;
+}
+
+.slideshow-container .slides {
+  display: none;
+}
+
+.slideshow-container .slides .stock-img {
+  width: 100%;
+  height: 38vh;
+}
+
+.slideshow-container .prevBtn, .slideshow-container .nextBtn {
+  border: none;
+  border-radius: 100%;
+  width: 2.5rem;
+  height: 2.5rem;
+}
 /*# sourceMappingURL=input.css.map */
