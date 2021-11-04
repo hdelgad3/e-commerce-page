@@ -5,6 +5,10 @@ const slides = document.querySelectorAll('.slides');
 const prevBtn = document.querySelector('.prevBtn');
 const nextBtn = document.querySelector('.nextBtn');
 const dots = document.querySelectorAll('.dot');
+const decBtn = document.querySelector('.decrementBtn');
+const incBtn = document.querySelector('.incrementBtn');
+const quantityOut = document.querySelector('#qOutput');
+const chOutBtn = document.querySelector('.checkoutBtn');
 
 menuBtn.forEach(item => {
     item.addEventListener('click', () => {
@@ -58,4 +62,19 @@ dots.forEach(item => {
         }
         refresh(ind);
     });
+})
+
+incBtn.addEventListener('click', ()=> {
+    console.log('di')
+})
+decBtn.addEventListener('click', ()=> {
+    console.log('L nerd')
+});
+
+chOutBtn.addEventListener('click', ()=> {
+    console.log('check out check out')
+})
+
+cartBtn.addEventListener('click', ()=> {
+    console.log('cart cart')
 })
