@@ -130,7 +130,8 @@ header nav .top .avatar {
   padding: 0.2rem;
 }
 
-.slideshow-container .dirBtn-container .prevBtn, .slideshow-container .dirBtn-container .nextBtn {
+.slideshow-container .dirBtn-container .prevBtn,
+.slideshow-container .dirBtn-container .nextBtn {
   border: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -143,7 +144,8 @@ header nav .top .avatar {
   opacity: 40%;
 }
 
-.slideshow-container .dirBtn-container .prevBtn:hover, .slideshow-container .dirBtn-container .nextBtn:hover {
+.slideshow-container .dirBtn-container .prevBtn:hover,
+.slideshow-container .dirBtn-container .nextBtn:hover {
   opacity: 80%;
 }
 
@@ -170,7 +172,8 @@ header nav .top .avatar {
   transition: background-color 0.6s ease;
 }
 
-.slideshow-container .circle-index .active, .slideshow-container .circle-index .dot:hover {
+.slideshow-container .circle-index .active,
+.slideshow-container .circle-index .dot:hover {
   background-color: #ff7d1a;
 }
 
@@ -233,7 +236,8 @@ header nav .top .avatar {
           align-items: center;
 }
 
-.details .userInput .priceInfo h1, .details .userInput .priceInfo h3 {
+.details .userInput .priceInfo h1,
+.details .userInput .priceInfo h3 {
   font-family: "Kumbh Sans", "Comic Sans";
   font-size: 1rem;
 }
@@ -280,10 +284,21 @@ header nav .top .avatar {
 
 .details .userInput .checkoutBtn {
   border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #ff7d1a;
   color: white;
-  max-width: 2rem;
+  width: 15rem;
   height: 5rem;
+  border-radius: 5%;
+  font-family: "Kumbh Sans", "Comic Sans";
+  font-weight: 700;
 }
 
 .attribution {
